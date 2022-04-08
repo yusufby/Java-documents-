@@ -1,0 +1,7 @@
+-- Why do we need to convert from non primitive data to primitive data? (wrapper )
+example : Integer to int
+it is because of memory and running time.primitive data is fast and have less memory.
+
+
+-- Why do we need to convert from primitive data to non primitive data? (wrapper )
+it is because primitive data can not create object. non primitive data does
