@@ -32,7 +32,7 @@ public class E03 {
         public static void goAndReadTheFile() {
 
             try {
-                FileInputStream fis = new FileInputStream("src/day27exception/File02.txt");
+                FileInputStream fis = new FileInputStream("src\\day27exception\\NewFile.txt");
                 int k = 0;
                 while ((k = fis.read()) != -1) {
                     System.out.print((char) k);
@@ -44,5 +44,6 @@ public class E03 {
             } finally {
                 System.out.println("Connection with cloud was broken");
             }
+
         }
     }
