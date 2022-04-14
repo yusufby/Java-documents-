@@ -28,7 +28,7 @@ public class MapInterviewQuestions {
         for (String w:words){
             Integer numberOfOccurrences=result.get(w);
             if (numberOfOccurrences==null){
-                result.put(w,1);
+                result.put(w,1); // if the word does not exist, this part will execute
             }else {
                 result.put(w,numberOfOccurrences+1);
 

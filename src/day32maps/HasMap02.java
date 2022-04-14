@@ -86,8 +86,8 @@ public class HasMap02 {
             //  System.out.println(lessons);
             /*How to remove element based on key value pair*/
 
-           // lessons.remove("Java", 9);
-            //System.out.println(lessons);
+            //  boolean icCorrect= lessons.remove("Java", 9);
+           //   System.out.println(icCorrect);
 
 
 
