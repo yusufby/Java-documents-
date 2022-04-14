@@ -19,6 +19,7 @@ public class HasMap02 {
         lessons.put("Java", 9);
         lessons.put("SDLC", 9);
         lessons.put("Api", 7);
+        System.out.println(lessons);
 
         Set<String> set=lessons.keySet();//it returns set.
 
@@ -30,13 +31,13 @@ public class HasMap02 {
 
         for (Integer w:values){
             System.out.println(w);
-        }
-        System.out.println(lessons.entrySet());//set of key value pairs
-        System.out.println("==================");
+        } ;
+//set of key value pairs
+        System.out.println("==================---------------");
         Set<Map.Entry<String, Integer>> setForm =lessons.entrySet();
         System.out.println(setForm);
 
-        /*IMPORTANT*/
+        /*IMPORTANT*/  // for each loop can be used in set not in map
         for (Map.Entry<String,Integer> w:setForm){
             System.out.println(w);
         }
@@ -68,7 +69,7 @@ public class HasMap02 {
             System.out.println("one value of the map " + lessons.get("Maths")); //String
 
             int value= lessons.replace("SDLC", 10);
-            System.out.println("Older value " + value);
+            System.out.println("Older value " + value); // replace method will 2 parameters returns me old =value of given key
             if (value==9)
 
             System.out.println("&&&&&&&&&&&&&&&");
@@ -76,6 +77,7 @@ public class HasMap02 {
             /*this method will take the key and value  and it will check 2 conditions. if the conditions are true
             * then it will  replace the value otherwise, i will not make any changes */
            boolean isTrue= lessons.replace("SDLC", 10,7);
+
             System.out.println(isTrue);
 
             System.out.println("--------------");
