@@ -29,7 +29,7 @@ public class MapInterviewQuestions {
             Integer numberOfOccurrences=result.get(w);
             if (numberOfOccurrences==null){
                 result.put(w,1); // if the word does not exist, this part will execute
-            }else {
+            }else {  // if the word does not exist in the map, this part will be executed
                 result.put(w,numberOfOccurrences+1);
 
             }
