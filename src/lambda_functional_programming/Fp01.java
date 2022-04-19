@@ -7,13 +7,22 @@ import java.util.stream.Collectors;
 
 public class Fp01 {
     public static void main(String[] args) {
-        /*
+
+        //Functional programming can be used only in arrays, collections and maps
+        //But we can not use maps directly. we can convert map to collections to use entrySet()
+
+            /*
         Lambda is a functional programming, we have had Lambda in Java with version 8
         Functional programming focuses on "What to do", with structured programming we focus on "How to do"
         Functional programming is used just with Collections and Arrays
         We cannot use Maps directly in functional programming, but we can convert Maps to Sets and use them
         we can use entrySet()
+        structured programming is hard.
          */
+
+        // lambda is functional programming.
+        // collections are list, queue and set not map
+
         List<Integer> l = new ArrayList<Integer>();
         l.add(8);
         l.add(9);
@@ -60,6 +69,7 @@ public class Fp01 {
     //  between two consecutive elements.(functional)
     public static void printElementsFunctional(List<Integer> list){
         list.stream().forEach( t -> System.out.print(t + " "));
+        // why do we use steam ? to be able to use more methods
     }
     //2)Create a method to print the even list elements on the console in the same line with a space
     //  between two consecutive elements.(Structured)
@@ -87,9 +97,16 @@ public class Fp01 {
     //elements should be distinct (unique number)
     //elements should be odd
     //elements printed as cube
+         /*Map: key-value structure
+            map: is a method
+            for each : print the elements one by one
+
+            * */
     public static void printCubeOfDistinctElements(List<Integer> list){
         list.stream().distinct().filter(t -> t %2 !=0).map(t -> t * t * t).forEach(t-> System.out.print(t +" "));
     }
+
+    /*we use map method to have the square of the odd numbers */
 
     //Create  a method to find the maximum value from the list elements
     public static void getMaxElement01(List<Integer> list){
@@ -103,6 +120,8 @@ public class Fp01 {
     public static void getMaxElement02(List<Integer> list){
         Integer maxVlue02= list.stream().distinct().sorted().reduce(Integer.MIN_VALUE, (t,u)-> u);
         System.out.println(maxVlue02);
+        /*distinct means repeated one will be shown only ones*/
+        //distinct method selects the repeated elements one time
     }
 //create a method to find the minimum value which is greater than 7 and even number from the list
     //1.way
@@ -132,9 +151,17 @@ public class Fp01 {
         Integer even=list.stream().distinct().filter(t-> t%2==0).map(t-> t*t).reduce(0, (t,u)-> t+u);
         System.out.println(even);
     }
-    //create an element to calculate product of the cubes of distinct of even elements
+
+    /*we use reduce method to add the numbers
+    * if you have one number at the end we use reduce for multiplication, addition
+    * max, min and average
+    * when  you use reduce method , you will have a single value */
+
+    //create an element to calculate product of the cubes of distinct of
+    // even elements
+
     public static void cubes(List<Integer>list){
        Integer cube= list.stream().distinct().filter(t-> t%2==0).map(t-> t*t*t).reduce(1, (t,u)-> t*u);
-        System.out.println(cube);
+        System.out.println(cube );
     }
 }
