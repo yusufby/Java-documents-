@@ -1,10 +1,8 @@
 package lambda_functional_programming;
 
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
 public class LambdaPractice {
     public static void main(String[] args) {
@@ -26,6 +24,8 @@ public class LambdaPractice {
         CubeOfElement(l1);
         System.out.println();
         ProductOfCubes(l1);
+        MaxValue(l1);
+        MinValue(l1);
 
 
     }
@@ -44,7 +44,17 @@ public class LambdaPractice {
     public static void ProductOfCubes(List<Integer>list){
 
     }
+    public static void MaxValue(List<Integer>list){
+     Integer max= list.stream().distinct().reduce(Integer.MIN_VALUE, (t,u)-> t>u ? t: u);
+        System.out.println(max);
 
 
+    }
+    public static void MinValue(List<Integer>list){
+        Integer min=list.stream().distinct().reduce(Integer.MAX_VALUE, (t,u)->t<u ? t : u );
+        System.out.println(min);
+
+
+    }
 
 }

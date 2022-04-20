@@ -92,8 +92,9 @@ public class Fp01 {
     public static void printSquareOfOddElements(List<Integer> list){
         list.stream().filter(t -> t % 2 != 0).map(t -> t * t ).forEach(t -> System.out.print(t  + " "));
     }// [8 9 131 10 9 10 2 8 15]
-    //4)Create a method to print the cube of distinct odd list elements on the console in the same line
-    //  with a space between two consecutive elements.
+
+    /*4)Create a method to print the cube of distinct odd list elements on the console in the same line
+   with a space between two consecutive elements.*/
     //elements should be distinct (unique number)
     //elements should be odd
     //elements printed as cube
@@ -110,7 +111,8 @@ public class Fp01 {
 
     //Create  a method to find the maximum value from the list elements
     public static void getMaxElement01(List<Integer> list){
-        Integer maxValue=list.stream().distinct().reduce(0,( t,u)->t> u ? t:u );
+        Integer maxValue=list.stream().distinct().
+                reduce(0,( t,u)->t> u ? t:u );
         System.out.println(" maximum value is " +maxValue);
 
 
@@ -121,9 +123,13 @@ public class Fp01 {
         Integer maxVlue02= list.stream().distinct().sorted().reduce(Integer.MIN_VALUE, (t,u)-> u);
         System.out.println(maxVlue02);
         /*distinct means repeated one will be shown only ones*/
+
+        /*sorted method put the numbers in ascending order. */
         //distinct method selects the repeated elements one time
     }
-//create a method to find the minimum value which is greater than 7 and even number from the list
+
+        //create a method to find the minimum value which is greater than
+        // 7 and even number from the list
     //1.way
     public static void getMinGreaterThanSeve01(List<Integer>list){
        Integer max= list.stream().distinct().
@@ -134,22 +140,35 @@ public class Fp01 {
     //2.way
     public static void getMinGreaterThanSeven02(List<Integer>list){
        Integer get02= list.stream().distinct().filter(t-> t>7).
-                                    filter(t-> t%2==0).sorted(Comparator.reverseOrder()).
+                                    filter(t-> t%2==0).
+                                    sorted(Comparator.reverseOrder()).
+                                    //Comparator.reverseOrder : make the orders opposite
                                     reduce(Integer.MAX_VALUE,(t,u)-> u);
-        System.out.println(get02);
+        System.out.println(get02);}
+
+        //3.way
+        public static void getMinGreaterThanSeven03(List<Integer>list){
+            Integer get02= list.stream().distinct().
+                    filter(t-> t>7).filter(t->t%2==0).
+                    sorted().findFirst().get();
+            /*when we use sorted().findFirst().get() methods , we can find the smallest element which is bigger than 7*/
 }
 //Create a method to  find the half of the elements which are distinct and greater than 5 in  reverse order in the list
     /*distinct, half of elements ,greater than 5, reverse , list */
 
     public static void halfOfElements(List<Integer>list){
     List<Double>newlist= list.stream().
-            distinct().filter(t-> t>5).map(t-> t / 2.0)
-            .sorted(Comparator.reverseOrder()).collect(Collectors.toList());
+           distinct().filter(t-> t>5).
+            map(t-> t/2.0).sorted(Comparator.reverseOrder()).collect(Collectors.toList());
+        /*if you want to store your data in collection , use "collect(Collectors.toList())" methods */
 
     }//create an element to calculate the sum of the squares of distinct even elements
+
     public static void sumOfSquare(List<Integer>list){
-        Integer even=list.stream().distinct().filter(t-> t%2==0).map(t-> t*t).reduce(0, (t,u)-> t+u);
-        System.out.println(even);
+        Integer even=list.stream().distinct().
+                filter(t-> t%2==0).map(t-> t*t).
+                reduce(0, (t,u)-> t+u);
+                System.out.println(even);
     }
 
     /*we use reduce method to add the numbers
