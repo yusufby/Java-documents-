@@ -43,7 +43,8 @@ public class Fb04 {
         System.out.println();
         System.out.println(checkToStartWit2(l));
         System.out.println();
-
+        System.out.println("------------");
+        removeElements02(l);
 
     }
 
@@ -105,16 +106,28 @@ public class Fb04 {
     //8) Remove the elements if the length is between 8 and 10 or ending with 'o'
 
     public static void removeElementsLengthInBetween8And10OrEndsWithO(List<String> list) {
+        // predicate is an interface.
         Predicate<String> checkCondition =
                 t -> (t.length() > 7 && t.length() < 11)
                         || t.endsWith("o");
         list.removeIf(t -> checkCondition.test(t));
         System.out.println(list);
     }
+    //8)  2.way
+    // Remove the elements if the length is between 8 and 10 or ending with 'o'
+    public static void removeElements02(List<String>list){
+        list.removeIf(t-> (t.length()<7 & t.length()>11)  || t.endsWith("o"));
+        System.out.println(list);
+    }
+
+
+
 
     //Create a method to check if the lengths of all elements are less than 12
     public static boolean checkTheLengthToBeLessThanTwelve(List<String> list) {
-        return list.stream().allMatch(t -> t.length() < 3);
+        return list.stream().allMatch(t -> t.length() < 12);
+        //allMatch() method means all elements must match with the condition in stream.
+
 
         /*this method will check all the values with no exception */
 
@@ -130,7 +143,9 @@ public class Fb04 {
     //Create a method to check if at least one of the elements with ending with "r"
 
     public static boolean checkToStartWit2(List<String> list) {
+
         return list.stream().anyMatch(t -> t.endsWith("r"));
+
     }
 
 
@@ -139,6 +154,9 @@ public class Fb04 {
         return IntStream.range(7, 101).reduce(0, Math::addExact);
 
     }
+/*String is case-sensitive all the time even in SQL */
+
+    // allMatch, anyMatch and nonMatch are important to find whether exists or not
 
 
 }

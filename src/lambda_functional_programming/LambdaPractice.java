@@ -27,6 +27,23 @@ public class LambdaPractice {
         MaxValue(l1);
         MinValue(l1);
 
+        List<String> l = new ArrayList<>();
+        l.add("Ali");
+        l.add("Ali");
+        l.add("Mark");
+        l.add("Amanda");
+        l.add("Christopher");
+        l.add("Jackson");
+        l.add("Mariano");
+        l.add("Alberto");
+        l.add("Tucker");
+        l.add("Benjamin");
+        System.out.println("================");
+        System.out.println(allElement01(l));
+        System.out.println("-------------------");
+        System.out.println(containNotXElement(l));
+        System.out.println("-------------------");
+        System.out.println(containRLetter(l));
 
     }
    public static void Functional(List<Integer>list){
@@ -61,6 +78,18 @@ public class LambdaPractice {
         Integer minimum=list.stream().distinct().reduce(Integer.MAX_VALUE, Math ::min);
         System.out.println(minimum);
 
+
+    }
+//Create a method to check if the lengths of all elements are less than 12
+    public static boolean allElement01(List<String>list){
+       return list.stream().allMatch(t-> t.length() < 12);
+
+    }
+    public static boolean containNotXElement(List<String>list){
+        return list.stream().noneMatch(t-> t.contains("X"));
+    }
+    public static boolean containRLetter(List<String>list){
+        return list.stream().anyMatch(t-> t.startsWith("C"));
     }
 
     }

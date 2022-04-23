@@ -12,16 +12,13 @@ public class Fp05 {
         System.out.println(factorial(4));
         System.out.println();
 
-
-
     }
 
 
     //create a method to find the sum of integers from 7 to 100
-    //create a method to find the sum of integers from 7 to 100
     public static int getSumFromSevenToHundred() {
         return IntStream.range(7, 101).reduce(0, Math::addExact);
-        /*this intStream does the same actions for loop does in structured programmin.
+        /*this intStream does the same actions for loop does in structured programming.
          * the last number is exclusive*/
     }
 
@@ -32,12 +29,14 @@ public class Fp05 {
 
     //create a method to find the multiplication of the integers from 2(inc) to 11(inc)
     public static int findMultiplication() {
-        return IntStream.rangeClosed(2, 11).reduce(1, Math::multiplyExact);
+        return IntStream.rangeClosed(2, 11).reduce
+                (1, Math::multiplyExact);
     }
     //create a method to calculate the factorial of a given number
     //5 factorial ?1.2.3.4.5=5!
     public static Object factorial(int x) {
-       return  x>0 ?  IntStream.rangeClosed(1,x).reduce(1, Math::multiplyExact):"Do not use negative numbers ";
+       return  x>0 ?  IntStream.rangeClosed(1,x).reduce(1,
+               Math::multiplyExact):"Do not use negative numbers ";
     }
 
 }
