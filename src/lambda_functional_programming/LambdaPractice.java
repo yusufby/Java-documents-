@@ -54,7 +54,13 @@ public class LambdaPractice {
         Integer min=list.stream().distinct().reduce(Integer.MAX_VALUE, (t,u)->t<u ? t : u );
         System.out.println(min);
 
+        //7)Create a method to find the minimum  value from the list elements (Method Reference )
+
+    }
+    public static void minimumValue(List<Integer>list){
+        Integer minimum=list.stream().distinct().reduce(Integer.MAX_VALUE, Math ::min);
+        System.out.println(minimum);
 
     }
 
-}
+    }

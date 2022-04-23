@@ -18,7 +18,7 @@ public class Fp03 {
             l.add(9);
             l.add(10);
             l.add(2);
-            l.add(8);
+            l.add(98);
             l.add(15);
             getElementsOnSeparateLine(l);
             System.out.println();
@@ -30,6 +30,10 @@ public class Fp03 {
             getMaxElement(l);
             getMinGreaterThanSeven(l);
             getHalfOfDistinctElementsInReversedOrder(l);
+            System.out.println("=======================");
+            sumOfSquareOfDistinctEvenElements02(l);
+            System.out.println("=======================");
+
         }
         //Create a method to print all elements on a separate line
         public static void getElementsOnSeparateLine(List<Integer> list){
@@ -47,7 +51,7 @@ public class Fp03 {
                     map(Utils ::getCube).
                     forEach(Utils ::printInSameLineWithSpace);
         }
-        //5)Create a method to calculate the sum of the squares of distinct even elements
+        //5) 1.way Create a method to calculate the sum of the squares of distinct even elements
         public static void sumOfSquareOfDistinctEvenElements(List<Integer> list){
             Integer sum = list.stream().distinct().
                     filter(Utils ::checkToBeEven).
@@ -55,6 +59,16 @@ public class Fp03 {
                     reduce(0,Math ::addExact);
             System.out.println(sum);
         }
+
+        //2.way
+        public static void sumOfSquareOfDistinctEvenElements02(List<Integer> list){
+        Integer sum02=list.stream().distinct().
+                filter(Utils ::checkToBeEven).
+                map(Utils ::getSquare).
+                reduce(0,Integer ::sum);
+            System.out.println(sum02);
+    }
+
         //6)Create a method to calculate the product of the cubes of distinct even elements
         public static void productOfCubesOfDistinctEvenElements(List<Integer> list){
             //distinct,even,  getCube,
@@ -75,12 +89,13 @@ public class Fp03 {
         }
         //10)Create a method to find the half of the elements which are distinct and greater than 5 in reverse order in the list.
         //distinct, half of the elements, greater than 5, reverse, list
-        public static void getHalfOfDistinctElementsInReversedOrder(List<Integer> list){
-          /* List <Double> newList = list.stream().
+        public static void getHalfOfDistinctElementsInReversedOrder(List<Integer> list) {
+          List <Double> newList = list.stream().
                    distinct().
                     filter(t -> t > 5).
-                    map(Utils :: getHalfOfElement).
+                    map(Utils ::getHalf).
                     sorted(Comparator.reverseOrder()).collect(Collectors.toList());
-            System.out.println(newList);*/
+                    System.out.println(newList);
+        }       /*collect(Collectors.toList() : gives me in reverse order in the list */
 
-}}
+}

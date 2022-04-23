@@ -31,4 +31,9 @@ public class Utils  {
     }
     public static char getFirstChar2(String str){
         return  str.charAt(0);
-}}
+}
+    public static double getHalf(Integer x ){
+        return x/2.0;
+
+    }
+}

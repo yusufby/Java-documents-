@@ -8,12 +8,20 @@ public class Fp02 {
 
     private static Object Utils;
 
-
+    // variable or variables or zero variable -> logic
+    // the structure is called " lambda expression
      /*
     In functional programming we can use "Lambda expressions" it is allowed, but it is not recommended
     Instead of "Lambda expressions", we prefer to use "Method reference"
-    When we use method reference we have " Class name :: method name "  Be careful about () -> we do not need
+    When we use method reference we have (" Class name :: method name ") Be careful about () -> we do not need
      */
+    //for example: String : : length (do not write method Parenthesis
+    // )
+    // Arrays : : toString
+    /*you can use your class.for example : you created animal clas
+    * you have eat() method in a class.
+     Animal : : eat
+     * will be enough */
 
     public static void main(String[] args) {
 
