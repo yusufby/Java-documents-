@@ -36,4 +36,13 @@ public class Utils  {
         return x/2.0;
 
     }
+    public static int getSumOfDigit(int x){
+        int sum=0;
+        while(x!=0){
+           sum= sum + x%10;
+           x=x/10;
+        }
+        return sum;
+
+    }
 }
