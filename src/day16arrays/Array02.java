@@ -9,9 +9,18 @@ public class Array02 {
         String nameArray [] = name.split(""); //String
         System.out.println(Arrays.toString(nameArray));
 
+
         //Please split this name into a char array.
         char array [] = name.toCharArray();//char
         System.out.println("Char array => " + Arrays.toString(array));
+
+        /*sequential search and binary search*/
+        // use factor to rename the names
+
+        /*String[] employees=new String[3];
+       employees[5]="new guy";*/ //this gives an error . ArrayIndexOutOfBoundsException
+
+
 
     }
 }

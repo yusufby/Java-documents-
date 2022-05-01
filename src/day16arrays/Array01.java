@@ -25,4 +25,9 @@ public class Array01 {
         String arr [] = sent.split("and");
         System.out.println(Arrays.toString(arr));
     }
+    //What is a constant variable?
+    /*An array is a container object that holds a fixed number of values of a single type.*/
+    //A variable whose value does not change throughout the execution of the program
+    /*The length of an array is established when the array is created. After creation, its length is fixed.*/
+    //By convention, how is a constant variable's name defined? all uppercase
 }
