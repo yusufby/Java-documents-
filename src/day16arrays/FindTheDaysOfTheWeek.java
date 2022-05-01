@@ -24,3 +24,5 @@ public class FindTheDaysOfTheWeek {
         System.out.println("Corresponding day: " + week[index - 1]);
     }
 }
+//All primitive data types can also be expressed as an object. it is called wrapper class.
+//String is an object
