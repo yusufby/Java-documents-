@@ -2,7 +2,8 @@ package day03typecastingwrapperscanner;
 
 public class TypeCasting01 {
 
-    //Type Casting: Converting small data type to large data type or converting large data type to small data type is called "Type Casting"
+    //Type Casting: Converting small data type to large data type or converting large data type
+    //               to small data type is called "Type Casting"
 
     // byte < short < int < long < float <  double
 

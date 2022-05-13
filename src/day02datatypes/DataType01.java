@@ -12,7 +12,10 @@ public class DataType01 {
         4)non-primitive data types use same size area in memory but primitive data types use different size area in memory
      */
 
-
+                /*Are objects non-primitive?
+                Image result for non primitive data types objects
+                1. Class, object, array, string, and interface are called non-primitive data types in Java.
+                These data types are not predefined in Java. They are created by programmers.*/
 
             //Primitive data types: boolean, char, byte, short, int, long, float, double
 
@@ -47,9 +50,14 @@ public class DataType01 {
             double weightOfACell = 0.00001230004;
 
             //Non-Primitive Data: String
-            String s = "Ali";
+          /*  String s = "Ali";
             System.out.println(s.toUpperCase());//ALI
-            System.out.println(s.toLowerCase());//ali
-        }
+            System.out.println(s.toLowerCase());//ali*/
+
+
+
+    }
+
+
     }
 

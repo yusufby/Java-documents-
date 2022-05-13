@@ -33,4 +33,5 @@ public class IfStatement01 {
             System.out.println("Neuter");
         }
 
+        System.out.println("2" + 5+ 1);
 }}
