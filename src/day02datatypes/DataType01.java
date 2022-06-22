@@ -36,7 +36,8 @@ public class DataType01 {
             //5)int: int is for whole numbers between -2,147,483,648 and 2,147,483,647. It uses 32 bits(4 bytes) in memory
             int annualProfitOfApple = 2000000000;
 
-            //6)long: long is for whole numbers between -9,223,372,036,854,755,808 and 9,223,372,036,854,755,807. It uses 64 bits(8 bytes) in memory
+            //6)long: long is for whole numbers between -9,223,372,036,854,755,808 and 9,223,372,036,854,755,807.
+        // It uses 64 bits(8 bytes) in memory
             // Do not forget to put "L" to the end of the value in long data type
             long populationOfTheWorld = 7000000000L;
 

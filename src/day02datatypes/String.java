@@ -24,13 +24,16 @@ the String class provides a lot of helpful methods for dealing with them.*/
 
     //length() lets us know how many characters are in the String and we can use this just like we use on the arrays.
 
-    /*There's also this matches() one where you can pass in a regular expression and see if the String matches that regular expression.*/
+    /*There's also this matches() one where you can pass in a regular expression and see
+     if the String matches that regular expression.*/
 
-    /*replace() and replaceAll() are useful if there's something within a String that you want to change to something else. You can use these replace methods.
+    /*replace() and replaceAll() are useful if there's something within a String that you want to change
+    to something else. You can use these replace methods.
 
         split() is also a good one where you have a String and you want to divide it by some delimiter.
 
-        Here's substring() where you can get part of the String — you can give it a beginning and ending index, and just get that portion of the String.
+        Here's substring() where you can get part of the String — you can give it a beginning and ending index,
+        and just get that portion of the String.
 
         There's a toLowerCase() which is really useful and toUpperCase() as well.
 
