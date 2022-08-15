@@ -51,7 +51,7 @@ public class DataType01 {
             double weightOfACell = 0.00001230004;
 
             //Non-Primitive Data: String
-          /*  String s = "Ali";
+           java.lang.String s = "Ali";
             System.out.println(s.toUpperCase());//ALI
             System.out.println(s.toLowerCase());//ali*/
 
