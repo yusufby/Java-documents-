@@ -4,14 +4,29 @@ public class String {
 
     /*Strings
 A String is an object and it's a sequence of characters.
-But much like the wrapper classes,
-the String class provides a lot of helpful methods for dealing with them.*/
+But much like the wrapper classes, the String class provides a lot of helpful methods for dealing with them.*/
 
 
     //get the very first element of the String, you can do a charAt(0).
     /*There's also this one, contains(), which is really useful.
      This will allow you to see if a String contains a certain sequence of characters.
      equals() we've used before, as well as equalsIgnoresCase().*/
+    public static void main(String[] args) {
+
+        java.lang.String examples="Hi world";
+        examples.contains("0");
+        examples.charAt(0);
+        examples.startsWith("F");
+
+        examples.matches("hi");
+
+
+
+
+
+    }
+
+
 
 
     //endsWith is a good one if you want to know if something is at the end of a String. There's also startsWith().
