@@ -25,7 +25,8 @@ public class NestedIfStatement01 {
 
         //How to get first character from a String
         /*
-            Note 1: If it is possible do not use nested-if because it has "time-complexity" means takes too much time to execute
+            Note 1: If it is possible do not use nested-if because
+             it has "time-complexity" means takes too much time to execute
          */
         char firstChar = pwd.charAt(0);
 

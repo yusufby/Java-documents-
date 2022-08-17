@@ -6,7 +6,8 @@ public class SwitchStatement03 {
 
     public static void main(String[] args) {
 
-        //Create a simple calculator which does addition, subtraction, multiplication, division, percentage calculation
+        //Create a simple calculator which does addition, subtraction,
+        // multiplication, division, percentage calculation
 
         Scanner scan = new Scanner(System.in);
 

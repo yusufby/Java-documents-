@@ -16,7 +16,8 @@ public class NestedTernary02 {
 
         String pwd = "ia1b3c";
 
-        String isValid = (pwd.length()>8) ? (pwd.charAt(0)=='i' ? "Valid password" : "Invalid password") : (pwd.charAt(0)=='K' ? "Valid password" : "Invalid password");
+        String isValid = (pwd.length()>8) ? (pwd.charAt(0)=='i' ? "Valid password" : "Invalid password") :
+                (pwd.charAt(0)=='K' ? "Valid password" : "Invalid password");
         System.out.println(isValid);
     }
 }

@@ -18,25 +18,25 @@ public class IfStatement03 {
         String dayName = scan.next();
 
         //Following code works, but it is not professional because there are many repetition
-        if(dayName.equals("Monday")){
+        if (dayName.equals("Monday")) {
             System.out.println("Weekday");
         }
-        if(dayName.equals("Tuesday")){
+        if (dayName.equals("Tuesday")) {
             System.out.println("Weekday");
         }
-        if(dayName.equals("Wednesday")){
+        if (dayName.equals("Wednesday")) {
             System.out.println("Weekday");
         }
-        if(dayName.equals("Thursday")){
+        if (dayName.equals("Thursday")) {
             System.out.println("Weekday");
         }
-        if(dayName.equals("Friday")){
+        if (dayName.equals("Friday")) {
             System.out.println("Weekday");
         }
-        if(dayName.equals("Saturday")){
+        if (dayName.equals("Saturday")) {
             System.out.println("Weekend Day");
         }
-        if(dayName.equals("Sunday")){
+        if (dayName.equals("Sunday")) {
             System.out.println("Weekend Day");
         }
 
@@ -44,11 +44,15 @@ public class IfStatement03 {
         //Note: In Java, there is OR Operator. OR Operator sign is "||".
         //      If you use "||", when one is true the result will be true
 
-        if(dayName.equals("Monday") || dayName.equals("Tuesday") || dayName.equals("Wednesday") || dayName.equals("Thursday") || dayName.equals("Friday")){
+        if (dayName.equals("Monday")
+                || dayName.equals("Tuesday")
+                || dayName.equals("Wednesday")
+                || dayName.equals("Thursday")
+                || dayName.equals("Friday")) {
             System.out.println("Weekday");
         }
 
-        if(dayName.equals("Saturday") || dayName.equals("Sunday")){
+        if (dayName.equals("Saturday") || dayName.equals("Sunday")) {
             System.out.println("Weekend Day");
         }
 
@@ -56,11 +60,15 @@ public class IfStatement03 {
         //Note: Java created another method to compare 2 Strings, the method will ignore the cases.
         //      According to that method monday, MONDAY, mOnDaY will be same.
         //      THe method is equalsIgnoreCase()
-        if(dayName.equalsIgnoreCase("Monday") || dayName.equalsIgnoreCase("Tuesday") || dayName.equalsIgnoreCase("Wednesday") || dayName.equalsIgnoreCase("Thursday") || dayName.equalsIgnoreCase("Friday")){
+        if (dayName.equalsIgnoreCase("Monday")
+                || dayName.equalsIgnoreCase("Tuesday")
+                || dayName.equalsIgnoreCase("Wednesday")
+                || dayName.equalsIgnoreCase("Thursday")
+                || dayName.equalsIgnoreCase("Friday")) {
             System.out.println("Weekday");
         }
 
-        if(dayName.equalsIgnoreCase("Saturday") || dayName.equalsIgnoreCase("Sunday")){
+        if (dayName.equalsIgnoreCase("Saturday") || dayName.equalsIgnoreCase("Sunday")) {
             System.out.println("Weekend Day");
         }
 
@@ -70,12 +78,12 @@ public class IfStatement03 {
                 dayName.equalsIgnoreCase("Wednesday") ||
                 dayName.equalsIgnoreCase("Thursday") ||
                 dayName.equalsIgnoreCase("Friday");
-        if(isWeekDay){
+        if (isWeekDay) {
             System.out.println("Weekday");
         }
         boolean isWeekEndDay = dayName.equalsIgnoreCase("Saturday") ||
                 dayName.equalsIgnoreCase("Sunday");
-        if(isWeekEndDay){
+        if (isWeekEndDay) {
             System.out.println("Weekend Day");
         }
 
