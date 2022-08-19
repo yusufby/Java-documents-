@@ -64,5 +64,7 @@ public class SwitchStatement01 {
                 break;//This is optional
         }
 
-    }
+
+        }
+
 }
