@@ -4,7 +4,7 @@ public class Sm02 {
 
     public static void main(String[] args) {
 
-        String fullName = "";
+        String fullName = " YUSUF BA YRAM ";
         System.out.println(fullName);
 
         //How to remove spaces from the beginning and from the end in a String
@@ -28,9 +28,14 @@ public class Sm02 {
             System.out.println("You entered your name successfully");
         }
 
-        String str = " ";
+        String str = "XDFXFXDF ";
         //isBlank() returns true if there is space character or space characters or nothing
         boolean isBlank = str.isBlank();
         System.out.println(isBlank);
+
+
+        String yusuf="";
+        boolean control=yusuf.isEmpty();
+        System.out.println(control);
     }
 }

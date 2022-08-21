@@ -13,7 +13,7 @@ public class Sm01 {
 
         //1.Example: Remove all space characters from the String
         String noSpace = str.replace(" ", "");
-        System.out.println(noSpace);//Aliis13yearsold
+        /*System.out.println(noSpace);*///Aliis13yearsold
 
         //2.Example: Change digits to *
         //1.Way: Hard Coded which is not good
@@ -76,6 +76,11 @@ System.out.println(noDigitDynamic);
         int numOfCharsDiffFromPunctuationMarks = str.replaceAll("\\p{Punct}", "").length();
         int numOfPunctuationMarks = totalNumberOfCharacters - numOfCharsDiffFromPunctuationMarks;
         System.out.println(numOfPunctuationMarks);
+
+
+        String newName=" Yusuf Byaram Fatma 34232 Yakup and Bebis2023";
+        System.out.println(newName.replace(" ", ""));
+        System.out.println(newName.replace("\\S","X"));
 
     }
 }
