@@ -2,6 +2,7 @@ package day11dowhileconstructors;
 
 public class Pratice01 {
     public static void main(String[] args) {
+        System.out.println("Enter a name ");
 
    int k=1;
 
@@ -13,4 +14,5 @@ public class Pratice01 {
 
 
     }
+
 }
