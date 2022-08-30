@@ -21,7 +21,7 @@ public class DoWhile01 {
             System.out.println("Hello!");
             k++;
         }while(k<1);
-
+        System.out.println("Everything is going to be okay");
 
     }
 }
