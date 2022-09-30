@@ -21,5 +21,8 @@ public class TypeCasting01 {
         short r = 257;
         byte y = (byte)r;
         System.out.println(y);// 1
+
+        short k=20;
+        byte km=(byte) k;
     }
 }

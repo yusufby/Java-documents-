@@ -14,7 +14,7 @@ public class WrapperClasses01 {
                long ==> Long
                float ==> Float
                double ==> Double
-            3) Wrapper classes are non-primitive, and they stored in Heap Memory
+            3) Wrapper classes are non-primitive, and they are stored in Heap Memory
          */
 
         //How to convert primitive data types to wrapper classes: Autoboxing
@@ -40,5 +40,9 @@ public class WrapperClasses01 {
 
         //Find the sum of max value of short and min value of long
         System.out.println(Short.MAX_VALUE + Long.MIN_VALUE);// -9223372036854743041
+        int ee=34343;
+        Integer eeee=ee;
+        System.out.println(eeee.toString());
+
     }
 }

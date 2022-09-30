@@ -13,11 +13,12 @@ public class DataType01 {
      */
 
                 /*Are objects non-primitive?
-                Image result for non primitive data types objects
-                1. Class, object, array, string, and interface are called non-primitive data types in Java.
-                These data types are not predefined in Java. They are created by programmers.*/
 
-            //Primitive data types: boolean, char, byte, short, int, long, float, double
+                Image result for non primitive data types objects*/
+                //1. Class, object, array, string, and interface are called non-primitive data types in Java.
+               // These data types are not predefined in Java. They are created by programmers.
+
+//            Primitive data types: boolean, char, byte, short, int, long, float, double
 
             //1)boolean: boolean has 2 values which are true or false.A boolean variable uses just a bit in the memory
             boolean isRetired = false;
