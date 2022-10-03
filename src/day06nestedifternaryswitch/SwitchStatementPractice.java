@@ -23,11 +23,16 @@ public class SwitchStatementPractice {
                 System.out.println("enter a valid number");
 
             }
-            break;
+            break;}
+
+            if(number%2==0){
+                System.out.println("it is even number");
+            }else {
+                System.out.println("it is odd number ");
+            }
 
 
         }
 
 
     }
-}
