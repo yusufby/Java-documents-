@@ -21,7 +21,6 @@ public class Sm01 {
         System.out.println(lastChar);
 
         //2.Way: Using substring()
-        //T
         // o get first character from a String by using substring() methods use str.substring(0,1);
         String firstCharacter = str.substring(0,1);
         System.out.println(firstCharacter);
