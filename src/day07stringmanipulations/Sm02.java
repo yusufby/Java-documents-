@@ -6,7 +6,9 @@ public class Sm02 {
 
         String str = "Ali Can";
 
-        String newStr = str.concat("!...").concat("Wow");// You can do concatenation by "+" sign but using concat() is better
+        String newStr = str.concat("!...").concat("Wow");
+        // You can do concatenation by "+" sign but using concat() is better
+
         System.out.println(newStr);
 
         boolean isLast = str.endsWith("Can");
