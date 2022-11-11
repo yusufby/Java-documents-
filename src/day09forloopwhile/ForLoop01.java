@@ -3,7 +3,7 @@ package day09forloopwhile;
 public class ForLoop01 {
     public static void main(String[] args) {
         //1.Example: Type code to print 5 times "Hello!" on the console
-        //1.Way: Not recommended a)Repetition b)For larger numbers impossible to do
+        //1.Way: Not recommended a-)Repetition b-) For larger numbers impossible to do
         System.out.println("Hello!");
         System.out.println("Hello!");
         System.out.println("Hello!");
@@ -11,7 +11,7 @@ public class ForLoop01 {
         System.out.println("Hello!");
 
         //2.Way: For repeated actions Java created a structure which is loops
-        //       There are 4 different loop structure in Java a)for-loop b)while-loop c)do-while-loop d)for-each-loop
+        //       There are 4 different loop structure in Java a-)for-loop b)while-loop c)do-while-loop d)for-each-loop
         System.out.println("==============");
 
         //for-loop
