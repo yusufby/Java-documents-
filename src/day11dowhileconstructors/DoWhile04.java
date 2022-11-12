@@ -4,7 +4,7 @@ public class DoWhile04<Constructors01> {
     public static void main(String[] args) {
 
     }
-      /*
+      /*sdsds
             Java knows class'es are templates to create object
             Because of that Java puts "constructor" in every class as default.
             Default constructors are invisible inside the classes
