@@ -37,7 +37,7 @@ public class Array02 {
                 }
                 System.out.println(w);
             }
-            System.out.println("=============");
+            System.out.println("yusuf =============");
             //Print the list elements except "Can" if there is. [Ali, Beyhan, Can, Veli]
             //1.Way:
             for(String w : myStringArray){
@@ -45,6 +45,7 @@ public class Array02 {
                     System.out.println(w);
                 }
             }
+             System.out.println("yusuf=====");
 
             //2.Way:
             for(String w : myStringArray) { // [Ali, Beyhan, Can, Veli]

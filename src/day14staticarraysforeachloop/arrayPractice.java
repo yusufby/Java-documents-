@@ -62,6 +62,31 @@ public class arrayPractice {
                 }
                 System.out.println(w);
             }
+        System.out.println("new practice ====");
+
+            String[] newName=new String[5];
+        System.out.println(Arrays.toString(newName));
+        newName[0]="yusuf";
+        newName[1]="fatma";
+        newName[2]="yakup salih";
+        newName[3]="lina asel";
+        newName[4]="family";
+        System.out.println(Arrays.toString(newName));
+        System.out.println(newName[2]);
+        System.out.println("======");
+        for(String each:newName){
+            System.out.println(each);
+        }
+        System.out.println("isimlerden bir tanesi ni cikarma ");
+        System.out.println("===");
+        for (String each :newName){
+            if (each.contains("family")){
+                continue;
+
+            }
+            System.out.println(each);
+        }
+
 
     }
 }
