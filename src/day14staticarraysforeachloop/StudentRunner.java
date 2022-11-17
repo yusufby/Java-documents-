@@ -7,5 +7,6 @@ public class StudentRunner {
     //To access non-static class members you have to create an object
     Student std1 = new Student();
     System.out.println(std1.setStudentId());
+
 }
 }
