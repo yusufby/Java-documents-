@@ -1,21 +1,26 @@
 package day17multidimentionallists;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class practiceArrayMulti {
     public static void main(String[] args) {
-        int[][] number = { {5, 0}, {-5, 34}, {65, 22, 31} };
-        int minimum = Integer.MIN_VALUE;
+       int[] array1=new int[3];
+       array1[0]=1;
+       array1[1]=2;
+       array1[2]=3;
+        System.out.println(Arrays.toString(array1));
+        System.out.println(array1[2]);
 
-        for (int[]w:number){
-            for (int y:w){
-                if (minimum<y){
-                    minimum=y;
+        ArrayList<Integer> array2=new ArrayList<>();
+        array2.add(2);
+        array2.add(5);
+        System.out.println(array2);
+        array2.set(1,1);
+        System.out.println(array2);
 
-                }
-            }
-        System.out.println(minimum);
-        }
+
+
 
 
 
