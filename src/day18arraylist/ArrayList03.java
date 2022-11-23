@@ -1,12 +1,34 @@
 package day18arraylist;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 
 public class ArrayList03 {
     //Find the closest 2 integers in the given list. [12, 15, 10, 21]
 
     public static void main(String[] args) {
+
+
+        int[] array1=new int[4];
+        array1[0]=2;
+        array1[1]=23;
+        array1[2]=25;
+        array1[3]=22;
+        Arrays.sort(array1);
+        System.out.println(Arrays.toString(array1));
+
+        ArrayList<Integer> listnew = new ArrayList<>();
+
+        listnew.add(9);
+        listnew.add(5);
+        listnew.add(10);
+
+        //Collections.sort() is used to put number in ascending order
+        Collections.sort(listnew);
+        System.out.println(listnew);
+
+        System.out.println("====");
 
         ArrayList<Integer> list = new ArrayList<>();
 
