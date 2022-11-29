@@ -12,27 +12,27 @@ public class Practice03 {
          */
 
 
-            Scanner scan = new Scanner(System.in);
-            System.out.println("Enter the length of the array..");
-            int length = scan.nextInt();
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the length of the array..");
+        int length = scan.nextInt();
 
-            int array [] = new int[length];
+        int array[] = new int[length];
 
-            int i = 0;
-            do{
-                System.out.println("Enter the element that index of : " + i);
-                array[i] = scan.nextInt();
-                i++;
-            } while(i < length);
-            System.out.println(Arrays.toString(array));
+        int i = 0;
+        do {
+            System.out.println("Enter the element that index of : " + i);
+            array[i] = scan.nextInt();
+            i++;
+        } while (i < length);
+        System.out.println(Arrays.toString(array));
 
 
-            Arrays.sort(array);
+        Arrays.sort(array);
 
-            System.out.println(Arrays.toString(array));
-int difference = array[length-1] - array[0];
+        System.out.println(Arrays.toString(array));
+        int difference = array[length - 1] - array[0];
 
-            System.out.println("The difference between smallest and largest : " + difference);
+        System.out.println("The difference between smallest and largest : " + difference);
 
     }
 }

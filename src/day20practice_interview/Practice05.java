@@ -16,5 +16,14 @@ public class Practice05 {
 
         System.out.println(str);  //M E S S
 
+
+        System.out.println("====");
+        String deneme="yusuf";
+
+        System.out.println( deneme.concat("fatma"));
+        String yakup="yakup";
+        deneme.concat(yakup);
+        System.out.println(deneme);
+
     }
     }
