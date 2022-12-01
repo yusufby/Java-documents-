@@ -37,6 +37,10 @@ public class StringBuilder1 {
                 //Java gives 2 times existing boxes plus 2 if you use characters more than the existing boxes
                 System.out.println("For non-empty: " + sb2.capacity());
 
+                String  family="fa";
+                System.out.println(family+"mily");
+
+
                 //3.Way:
                 StringBuilder sb3 = new StringBuilder(2);
                 sb3.append("FL!");
