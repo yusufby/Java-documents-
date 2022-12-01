@@ -10,6 +10,8 @@ public class StringBuilder1 {
               use String Class
          */
 
+        //A mutable object can be changed after it's created, and an immutable object can't.
+        // immutable means unmodified or unchangeable
         public static void main(String[] args) {
 
                 String s = "Ali";
