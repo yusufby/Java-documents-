@@ -13,6 +13,12 @@ public class Runner {
         bankCard.setCv_Name(234);
         System.out.println(bankCard);
 
+        System.out.println(bankCard.getCv_SSN());
+
+        bankCard.setCv_SSN(5432222);
+
+        System.out.println(bankCard.getCv_SSN());
+
 
     }
 }

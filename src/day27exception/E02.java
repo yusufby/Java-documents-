@@ -21,6 +21,9 @@ public class E02 {
 
         convertObjectToString(obj);// ClassCastException ==> Integer cannot be cast to String
 
+        int i=90;
+        convertObjectToString(String.valueOf(i));
+
     }
 
     public static void convertObjectToString(Object obj) {

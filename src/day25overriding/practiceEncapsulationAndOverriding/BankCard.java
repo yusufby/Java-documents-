@@ -7,6 +7,8 @@ public class BankCard {
 
     private int cv_Name=123;
 
+    private int cv_SSN=123455;
+
     public int getBankCard(){
         return bankCard;
     }
@@ -28,6 +30,16 @@ public class BankCard {
     public int getCv_Name(){
         return cv_Name;
     }
+
+    public int getCv_SSN(){
+        return cv_SSN;
+    }
+
+    public void setCv_SSN(int cv_SSN){
+        this.cv_SSN=cv_SSN;
+    }
+
+
 
 
 }
