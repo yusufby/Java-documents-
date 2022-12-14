@@ -26,5 +26,6 @@ class Test5{
         a.b();
         a.c();
         a.d();
+
     }}
 
