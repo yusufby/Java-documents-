@@ -26,6 +26,6 @@ class Test5{
         a.b();
         a.c();
         a.d();
-
+        System.out.println("Hello world ");
     }}
 
