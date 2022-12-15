@@ -1,5 +1,6 @@
 package day29interfacemanipulations;
 
+import javax.swing.*;
 import java.util.HashSet;
 import java.util.TreeSet;
 
@@ -55,6 +56,27 @@ public class Collections {
 
         System.out.println(t2 - t1);
         System.out.println(t3 - t2);
+
+        System.out.println("------------------");
+        TreeSet<Integer> example=new TreeSet<>();
+        example.add(5);
+        example.add(7);
+        example.add(10);
+        example.add(3);
+        System.out.println(example);
+
+        HashSet<Integer>example2=new HashSet<>();
+        example2.add(4);
+        example2.add(2);
+        example2.add(10);
+        example2.add(9);
+        System.out.println(example2);
+
+        Long example2second=System.nanoTime();
+        Long examplesecond=System.nanoTime();
+
+        System.out.println(example2second);
+        System.out.println(examplesecond);
 
 
 
