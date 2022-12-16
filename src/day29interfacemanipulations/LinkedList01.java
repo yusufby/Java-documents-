@@ -9,7 +9,13 @@ public class LinkedList01 {
         ll1.add("Can");
         ll1.add("Mark");
         ll1.add("Tom");
-
+        System.out.println(ll1);
+        String ali=ll1.element();
+        System.out.println(ali);
+        String veli=ll1.poll();
+        System.out.println(veli);
+        System.out.println(ll1);
+                                             /*LinkedList */
         //print and see all elements on the console
 //        System.out.println(ll1);
 //        String firstElement = ll1.element();//returns the first element of the list without removing any element(copy+paste)
@@ -35,7 +41,7 @@ public class LinkedList01 {
 //        System.out.println(ll2.poll());////this returns just a null if there is no value
 
         LinkedList<Integer> ll3 = new LinkedList<>();
-        ll3.add(0, 12);//When I want to use order for the lements, I can place at specific indexes my list elements
+        ll3.add(0, 12);//When I want to use order for the elements, I can place at specific indexes my list elements
         ll3.add(1, 13);
         ll3.add(2, 10);
         ll3.add(3, 11);
