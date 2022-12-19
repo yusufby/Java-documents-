@@ -27,6 +27,14 @@ public class HashSet01 {
         hs2.add("k");
         System.out.println(hs2);
 
+        HashSet<String> deneme=new HashSet<>();
+        deneme.add("ali");
+        deneme.add("");
+        deneme.add(null);
+        deneme.add("yusuf");
+        deneme.add("yusuf");
+        System.out.println(deneme);
+
 
         //interview question:type a code to display arraylist
         // elements only once

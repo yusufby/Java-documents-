@@ -48,7 +48,6 @@ HashSet does not provide any method to maintain the insertion order.
         System.out.println(lh3);
 
         // if you want make things faster and easier use set
-        // what is the budget for the position?
 
 
 
