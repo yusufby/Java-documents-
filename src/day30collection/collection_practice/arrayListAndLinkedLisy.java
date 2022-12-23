@@ -20,6 +20,18 @@ public class arrayListAndLinkedLisy {
         number.add(10);
         number.add(15);
         number.retainAll(number);
+        number.addAll(number);
+        System.out.println(number);
+        System.out.println(number.isEmpty());
+        System.out.println(number.size());
+        System.out.println(number.contains(10));
+        System.out.println(number.toArray());
+        number.add(5,5);
+        System.out.println(number);
+        number.get(0);
+        number.set(3,3);
+        System.out.println(number);
+
 
 
 
