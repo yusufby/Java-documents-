@@ -48,6 +48,7 @@ public class ArrayListDeneme {
 
         //shuffle helps us to change the elements index randomly
         System.out.println(stringDeneme);
+        System.out.println();
 
 
 
