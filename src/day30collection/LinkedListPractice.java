@@ -1,6 +1,11 @@
 package day30collection;
 
+import com.sun.source.doctree.SeeTree;
+
+import java.util.Collections;
 import java.util.LinkedList;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class LinkedListPractice {
     public static void main(String[] args) {
@@ -10,7 +15,10 @@ public class LinkedListPractice {
         l1.add("yusuf");
         l1.add("fatma");
         l1.add("hasan");
-
+        Collections.shuffle(l1);
+        System.out.println(l1);
+        Collections.sort(l1);
+        System.out.println(l1);
 
         System.out.println(l1);
         System.out.println("=========");
@@ -51,6 +59,22 @@ public class LinkedListPractice {
         ll3.set(0,54);
 
         System.out.println(ll3);
+        // how to print element one by one with for loop
+        LinkedList<Integer> numbers=new LinkedList<>(ll3);
+        System.out.println(numbers);
+
+        for (int i = 0; i < numbers.size()-1; i++) {
+            System.out.print(numbers.get(i) +" ");
+        }
+        System.out.println("-----");
+        // how to print element one by one with for each
+        for (Integer e:numbers){
+            System.out.print(e + " ");
+        }
+        System.out.println("====");
+        Set<Integer>numberUnique=new TreeSet<>(numbers);
+        System.out.println(numberUnique);
+
 
 
 
