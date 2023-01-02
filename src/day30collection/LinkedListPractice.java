@@ -2,10 +2,7 @@ package day30collection;
 
 import com.sun.source.doctree.SeeTree;
 
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 public class LinkedListPractice {
     public static void main(String[] args) {
@@ -74,6 +71,13 @@ public class LinkedListPractice {
         System.out.println("====");
         Set<Integer>numberUnique=new TreeSet<>(numbers);
         System.out.println(numberUnique);
+
+        // how to print element one by one with iterator method from java utils
+        Iterator i=numbers.iterator();
+        while (i.hasNext()){
+            System.out.print( " " + i.next());
+        }
+
 
 
 
